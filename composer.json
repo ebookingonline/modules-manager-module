@@ -1,0 +1,20 @@
+{
+  "name": "ebooking/modules-manager",
+  "description": "Manage system modules",
+  "version": "1.0",
+  "type": "ebo-module",
+  "authors": [
+    {
+      "name": "Ata amini",
+      "email": "ata.aminie@gmail.com"
+    }
+  ],
+  "require": {
+    "e-booking/framework": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Modules\\ModulesManager\\": ""
+    }
+  }
+}
