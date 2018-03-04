@@ -5,7 +5,12 @@
     | Date   : 2018-01-25
     | TIME   : 10:13 PM
     */
-
     return [
-        '/modules' => 'modules/manager/index',
+        [
+            'prefix' => 'modules-manager',
+            'rules'  => [
+                '/'    => 'manager/index',
+                'list' => 'manager/index'
+            ],
+        ],
     ];
