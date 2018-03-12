@@ -17,7 +17,7 @@
         "aliases"             => [],
         "configuration"       => [],
         "menuExtender"        => [
-            "sidebar-navigation-bar" => "Modules\\ModulesManager\\Menu\\Backend\\SidebarMenuExtender"
+            "admin::sidebar" => "Modules\\ModulesManager\\Menu\\Backend\\SidebarMenuExtender"
         ],
         "routes"              => [
             "backend" => "Http/Routes/Backend/Routes.php"

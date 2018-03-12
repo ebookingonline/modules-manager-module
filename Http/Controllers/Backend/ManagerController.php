@@ -14,6 +14,8 @@
     {
         public function actionIndex()
         {
-            return $this->render('/Modules-manager/Backend/Manager/ModulesList');
+            return $this->render('/Modules-manager/Backend/Manager/ModulesList', [
+                'modules' => $this->app()->services->modulesRepository->getModules()
+            ]);
         }
     }

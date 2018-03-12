@@ -20,13 +20,26 @@
          * extend menu
          *
          * @param Menu $menu
+         *
          * @return mixed
          */
         public function extend(Menu $menu)
         {
-            //dd(\Yii::$aliases, Url::toRoute(['@dash.test']));
+            $menu->group('modules', null, $this->trans('Modules'), 'icon-power-cord', function (Menu $utilities) {
+                $utilities->link(['/modules-manager/manager/index'], $this->trans('Modules list'), 'icon-make-group');
+            });
+        }
 
-            //echo \yii\helpers\Url::toRoute(['@admin.menu.delete', 'id' => 1]);
-            //dd(\Yii::$aliases);
+        /**
+         * translation module message
+         *
+         * @param $message
+         *
+         * @return string
+         * @internal
+         */
+        private function trans($message)
+        {
+            return \Yii::t('module.modules-manager.default', $message);
         }
     }
