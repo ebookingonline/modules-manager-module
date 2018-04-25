@@ -6,11 +6,11 @@
     | TIME   : 1:11 AM
     */
 
-    /** @var \Ebooking\Base\View $this */
+    /** @var \Smart\Base\View $this */
 
     $this->title = Yii::t('module.modules-manager.default', 'Modules');
 
-    ?>
+?>
 <ul class="list-group box">
     <li class="list-group-item">
         <a href="#" class="float-left w-40">
@@ -50,4 +50,22 @@
     </li>
 </ul>
 
-<section class="panel"> <header class="panel-heading"> <ul class="nav nav-tabs pull-right"> <li class=""><a href="#messages-1" data-toggle="tab"><i class="fa fa-comments fa-lg text-default"></i></a></li> <li class=""><a href="#profile-1" data-toggle="tab"><i class="fa fa-user fa-lg text-default"></i> Profile</a></li> <li class="active"><a href="#settings-1" data-toggle="tab"><i class="fa fa-cog fa-lg text-default"></i> Settings</a></li> </ul> <span class="hidden-sm">Right tab</span> </header> <div class="panel-body"> <div class="tab-content"> <div class="tab-pane" id="messages-1">message</div> <div class="tab-pane" id="profile-1">profile</div> <div class="tab-pane active" id="settings-1">settings</div> </div> </div> </section>
+<section class="panel">
+    <header class="panel-heading">
+        <ul class="nav nav-tabs pull-right">
+            <li class=""><a href="#messages-1" data-toggle="tab"><i class="fa fa-comments fa-lg text-default"></i></a>
+            </li>
+            <li class=""><a href="#profile-1" data-toggle="tab"><i class="fa fa-user fa-lg text-default"></i>
+                    Profile</a></li>
+            <li class="active"><a href="#settings-1" data-toggle="tab"><i class="fa fa-cog fa-lg text-default"></i>
+                    Settings</a></li>
+        </ul>
+        <span class="hidden-sm">Right tab</span></header>
+    <div class="panel-body">
+        <div class="tab-content">
+            <div class="tab-pane" id="messages-1">message</div>
+            <div class="tab-pane" id="profile-1">profile</div>
+            <div class="tab-pane active" id="settings-1">settings</div>
+        </div>
+    </div>
+</section>

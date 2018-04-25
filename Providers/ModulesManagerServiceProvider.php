@@ -8,7 +8,7 @@
 
     namespace Modules\ModulesManager\Providers;
 
-    use Ebooking\Engine\ServiceProvider;
+    use Smart\Engine\ServiceProvider;
 
     /**
      * Class ModulesManagerServiceProvider

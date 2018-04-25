@@ -1,20 +1,20 @@
 {
-  "name": "ebooking/modules-manager",
-  "description": "Manage system modules",
-  "version": "1.0",
-  "type": "ebo-module",
-  "authors": [
-    {
-      "name": "Ata amini",
-      "email": "ata.aminie@gmail.com"
+    "name": "smart/modules-manager",
+    "description": "Manage system modules",
+    "version": "1.1",
+    "type": "smart-module",
+    "authors": [
+        {
+            "name": "Ata amini",
+            "email": "ata.aminie@gmail.com"
+        }
+    ],
+    "require": {
+        "smart/framework": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\ModulesManager\\": ""
+        }
     }
-  ],
-  "require": {
-    "e-booking/framework": "*"
-  },
-  "autoload": {
-    "psr-4": {
-      "Modules\\ModulesManager\\": ""
-    }
-  }
 }

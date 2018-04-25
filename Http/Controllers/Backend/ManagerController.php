@@ -8,7 +8,7 @@
 
     namespace Modules\ModulesManager\Http\Controllers\Backend;
 
-    use Ebooking\Web\Controllers\BackendController;
+    use Smart\Web\Controllers\BackendController;
 
     class ManagerController extends BackendController
     {

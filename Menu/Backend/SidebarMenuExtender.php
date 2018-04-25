@@ -9,9 +9,8 @@
     namespace Modules\ModulesManager\Menu\Backend;
 
 
-    use Ebooking\Menu\Extender;
-    use Ebooking\Menu\Menu;
-    use yii\helpers\Url;
+    use Smart\Menu\Extender;
+    use Smart\Menu\Menu;
 
     class SidebarMenuExtender extends Extender
     {
@@ -25,9 +24,6 @@
          */
         public function extend(Menu $menu)
         {
-            $menu->group('modules', null, $this->trans('Modules'), 'icon-power-cord', function (Menu $utilities) {
-                $utilities->link(['/modules-manager/manager/index'], $this->trans('Modules list'), 'icon-make-group');
-            });
         }
 
         /**
